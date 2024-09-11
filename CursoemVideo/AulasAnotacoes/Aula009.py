@@ -1,16 +1,16 @@
-# Fatiamento de String
+#1. Fatiamento de String
 frase = 'Curso em Vídeo Python'
 print(frase[9])       # 'V'
 print(frase[9:13])    # 'Víde'
 print(frase[9:21:2])  # 'VdoPto'
 
-#Funções de Análise
+#2. Funções de Análise
 frase = 'Curso em Vídeo Python'
 print(len(frase))         # 21
 print(frase.count('o'))   # 3
 print(frase.find('Vídeo')) # 9
 
-#Transformações
+#3. Transformações
 frase = '   Aprendendo Python   '
 print(frase.replace('Python', 'Java'))  # '   Aprendendo Java   '
 print(frase.upper())                    # '   APRENDENDO PYTHON   '
@@ -19,23 +19,38 @@ print(frase.capitalize())               # '   aprendendo python   '
 print(frase.title())                    # '   Aprendendo Python   '
 print(frase.strip())                    # 'Aprendendo Python'
 
-#Junção de Strings
+#4. Junção de Strings
 lista = ['Curso', 'em', 'Vídeo', 'Python']
 print(' '.join(lista))  # 'Curso em Vídeo Python'
 
-#Verificação de presença e posições
+#5. Verificação de presença e posições
 frase = 'Curso em Vídeo Python'
 print('Curso' in frase)   # True
 print(frase.find('Python'))  # 15
 print(frase.rfind('o'))    # 17 (rfind busca da direita para a esquerda)
 
-#Divisão de Strings
+#6. ivisão de Strings
 frase = 'Curso em Vídeo Python'
 print(frase.split())  # ['Curso', 'em', 'Vídeo', 'Python']
 
-#Uso de Strings Multilinha
+#7. Uso de Strings Multilinha
 mensagem = '''Olá, 
 tudo bem? 
 Esse é um exemplo de string multilinha.'''
 print(mensagem)
 
+#8. Justificando Textos
+nome = 'Guanabara'
+print(nome.ljust(20, '-'))  # 'Guanabara-----------'
+print(nome.rjust(20, '-'))  # '-----------Guanabara'
+print(nome.center(20, '-')) # '-----Guanabara------'
+
+#9. Remoção de Espaços com strip(), rstrip(), e lstrip()
+frase = '   Aprendendo Python   '
+print(frase.rstrip())  # '   Aprendendo Python'
+print(frase.lstrip())  # 'Aprendendo Python   '
+
+#10. Uso de Variáveis em Strings
+nome = 'Guanabara'
+idade = 40
+print(f'O professor {nome} tem {idade} anos.')
