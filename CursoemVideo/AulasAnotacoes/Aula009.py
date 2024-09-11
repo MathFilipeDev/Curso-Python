@@ -19,3 +19,23 @@ print(frase.capitalize())               # '   aprendendo python   '
 print(frase.title())                    # '   Aprendendo Python   '
 print(frase.strip())                    # 'Aprendendo Python'
 
+#Junção de Strings
+lista = ['Curso', 'em', 'Vídeo', 'Python']
+print(' '.join(lista))  # 'Curso em Vídeo Python'
+
+#Verificação de presença e posições
+frase = 'Curso em Vídeo Python'
+print('Curso' in frase)   # True
+print(frase.find('Python'))  # 15
+print(frase.rfind('o'))    # 17 (rfind busca da direita para a esquerda)
+
+#Divisão de Strings
+frase = 'Curso em Vídeo Python'
+print(frase.split())  # ['Curso', 'em', 'Vídeo', 'Python']
+
+#Uso de Strings Multilinha
+mensagem = '''Olá, 
+tudo bem? 
+Esse é um exemplo de string multilinha.'''
+print(mensagem)
+
