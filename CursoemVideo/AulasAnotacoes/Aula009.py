@@ -10,6 +10,14 @@ print(len(frase))         # 21
 print(frase.count('o'))   # 3
 print(frase.find('Vídeo')) # 9
 
+#2.1 Eliminar espaços
+N = str(input('Digite seu nome completo: ')).strip() # o .strip elimina o espaço do inicio e do fim
+
+separa = N.split() #separa cada palavra da frase
+print(f'Seu nome tem ao todo {len(N) - N.count(' ')} letras') #Nesse caso ele Lê a frase e elimina os espaços entre as palavras
+
+print(f'Seu primeiro nome é {separa[0]} e ele tem {len(separa[0])} letras') #Dessa forma ele identifica qual é a primeira palavra e depois conta quantas letras tem essa palavra
+
 #3. Transformações
 frase = '   Aprendendo Python   '
 print(frase.replace('Python', 'Java'))  # '   Aprendendo Java   '
